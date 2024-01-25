@@ -13,5 +13,25 @@ module.exports = (sequelize, Sequelize) => {
     
     });
     
+    entities.product = sequelize.define('product', {
+    
+    price: {
+      type: Sequelize.INTEGER
+    },
+    
+    name: {
+      type: Sequelize.STRING
+    }
+    
+    });
+    
+    entities.cart = sequelize.define('cart', {
+    
+    height: {
+      type: Sequelize.INTEGER
+    }
+    
+    });
+    
   return entities;
 };
